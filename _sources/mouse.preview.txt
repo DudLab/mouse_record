@@ -1,0 +1,7 @@
+mouse.preview module
+====================
+
+.. automodule:: mouse.preview
+    :members:
+    :undoc-members:
+    :show-inheritance:

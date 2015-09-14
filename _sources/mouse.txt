@@ -1,0 +1,17 @@
+mouse package
+=============
+
+.. automodule:: mouse
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   mouse.picture
+   mouse.preview
+   mouse.record
+

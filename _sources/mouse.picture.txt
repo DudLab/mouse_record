@@ -1,0 +1,7 @@
+mouse.picture module
+====================
+
+.. automodule:: mouse.picture
+    :members:
+    :undoc-members:
+    :show-inheritance:

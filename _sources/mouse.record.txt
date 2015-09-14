@@ -1,0 +1,7 @@
+mouse.record module
+===================
+
+.. automodule:: mouse.record
+    :members:
+    :undoc-members:
+    :show-inheritance:
