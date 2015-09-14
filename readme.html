@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>README &mdash; mouse_recorder 0.0.2 documentation</title>
+    <title>README &mdash; mouse_recorder 0.0.3 documentation</title>
     
     <link rel="stylesheet" href="_static/cloud.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.0.2',
+        VERSION:     '0.0.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -28,7 +28,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/jquery.cookie.js"></script>
     <script type="text/javascript" src="_static/cloud.js"></script>
-    <link rel="top" title="mouse_recorder 0.0.2 documentation" href="index.html" />
+    <link rel="top" title="mouse_recorder 0.0.3 documentation" href="index.html" />
     <link rel="next" title="mouse package" href="mouse.html" />
     <link rel="prev" title="Welcome to mouse_recorder’s documentation!" href="index.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +51,7 @@
         <li class="right" >
           <a href="index.html" title="Welcome to mouse_recorder’s documentation!"
              accesskey="P">previous</a> &nbsp; &nbsp;</li>
-    <li><a href="index.html">mouse_recorder 0.0.2 documentation</a> &raquo;</li>
+    <li><a href="index.html">mouse_recorder 0.0.3 documentation</a> &raquo;</li>
  
       </ul>
     </div>
@@ -78,7 +78,7 @@
 <h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
 <p>The program&#8217;s is designed to record rodent behavior at specific
 intervals of time, based on the initiation of a trigger event (e.g., the
-press of a lever.</p>
+press of a lever).</p>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
@@ -131,7 +131,9 @@ shown below.</p>
 <div class="section" id="picture-usage">
 <h3>Picture Usage<a class="headerlink" href="#picture-usage" title="Permalink to this headline">¶</a></h3>
 <p>Execution of the program consists of the program name and a single
-argument, the directory in which the picture is to be saved into.</p>
+argument, the directory in which the picture is to be saved into.
+If a directory is not specified, the current directory will be
+assumed.</p>
 <div class="highlight-python"><div class="highlight"><pre>mouse-picture ~/Destkop
 </pre></div>
 </div>
@@ -140,6 +142,7 @@ argument, the directory in which the picture is to be saved into.</p>
 <h3>Preview Usage<a class="headerlink" href="#preview-usage" title="Permalink to this headline">¶</a></h3>
 <p>Execution of the program consists of the program name and a single
 argument: the time desired length of the camera preview (in seconds).
+If the time is not specified, this will default to 15 seconds.
 Additionally, the user can exit at any time by entering <code class="docutils literal"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">c</span></code></p>
 <div class="highlight-python"><div class="highlight"><pre>mouse-preview 60
 </pre></div>
@@ -150,12 +153,13 @@ Additionally, the user can exit at any time by entering <code class="docutils li
 <p>Execution of the program consists of the program name and respectve
 arguments: time to record before trigger event (in seconds), time to
 record after (in seconds), and directory of the file to be saved into.
-An example is shown below:</p>
+If a directory is not specified, the current directory will be
+assumed. An example is shown below:</p>
 <div class="highlight-python"><div class="highlight"><pre>sudo mouse-record 2 2 /home/pi/Desktop
 </pre></div>
 </div>
-<p>Also, as mentioned before, the program will end when a
-<code class="docutils literal"><span class="pre">KeyboardInterrupt</span></code>(Ctrl + c) is entered into the terminal.</p>
+<p>Also, as mentioned before, the program will end when a <code class="docutils literal"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">c</span></code> is
+entered into the terminal.</p>
 </div>
 </div>
 </div>
@@ -237,7 +241,7 @@ An example is shown below:</p>
         <li class="right" >
           <a href="index.html" title="Welcome to mouse_recorder’s documentation!"
              >previous</a> &nbsp; &nbsp;</li>
-    <li><a href="index.html">mouse_recorder 0.0.2 documentation</a> &raquo;</li>
+    <li><a href="index.html">mouse_recorder 0.0.3 documentation</a> &raquo;</li>
  
       </ul>
     </div>

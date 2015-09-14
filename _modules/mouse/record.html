@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>mouse.record &mdash; mouse_recorder 0.0.2 documentation</title>
+    <title>mouse.record &mdash; mouse_recorder 0.0.3 documentation</title>
     
     <link rel="stylesheet" href="../../_static/cloud.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.0.2',
+        VERSION:     '0.0.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -28,7 +28,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/jquery.cookie.js"></script>
     <script type="text/javascript" src="../../_static/cloud.js"></script>
-    <link rel="top" title="mouse_recorder 0.0.2 documentation" href="../../index.html" />
+    <link rel="top" title="mouse_recorder 0.0.3 documentation" href="../../index.html" />
     <link rel="up" title="Module code" href="../index.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -44,7 +44,7 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> &nbsp; &nbsp;</li>
-    <li><a href="../../index.html">mouse_recorder 0.0.2 documentation</a> &raquo;</li>
+    <li><a href="../../index.html">mouse_recorder 0.0.3 documentation</a> &raquo;</li>
 
           <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
       </ul>
@@ -94,7 +94,7 @@
 <span class="sd">            Relies on GPIO ports on the RaspberryPi for event notification.</span>
 
 <span class="sd">        Attributes:</span>
-<span class="sd">            port(int):                      Description of `attr1`.</span>
+<span class="sd">            port(int):                      GPIO port of trigger.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">27</span><span class="p">):</span>
@@ -102,7 +102,7 @@
 <span class="sd">            Function sets up GPIO port as argument.</span>
 
 <span class="sd">            Args:</span>
-<span class="sd">                port(Optional[int]):        GPIO port of trigger</span>
+<span class="sd">                port(Optional[int]):        GPIO port of trigger.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span>
 
@@ -129,9 +129,9 @@
 <span class="sd">        Notes:</span>
 <span class="sd">            These are the parameters of the arguments.</span>
 
-<span class="sd">            folder(str):                    File directory</span>
-<span class="sd">            x(int):                         Time to record before (in seconds)</span>
-<span class="sd">            y(int):                         Time to record after (in seconds)</span>
+<span class="sd">            * folder(str):                  File directory</span>
+<span class="sd">            * x(int):                       Time to recording before (seconds)</span>
+<span class="sd">            * y(int):                       Time to record after (seconds)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="c"># Time to record before and after as well as directory are stored here</span>
@@ -250,7 +250,7 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> &nbsp; &nbsp;</li>
-    <li><a href="../../index.html">mouse_recorder 0.0.2 documentation</a> &raquo;</li>
+    <li><a href="../../index.html">mouse_recorder 0.0.3 documentation</a> &raquo;</li>
 
           <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &raquo;</li> 
       </ul>

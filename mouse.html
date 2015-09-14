@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>mouse package &mdash; mouse_recorder 0.0.2 documentation</title>
+    <title>mouse package &mdash; mouse_recorder 0.0.3 documentation</title>
     
     <link rel="stylesheet" href="_static/cloud.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.0.2',
+        VERSION:     '0.0.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -28,7 +28,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/jquery.cookie.js"></script>
     <script type="text/javascript" src="_static/cloud.js"></script>
-    <link rel="top" title="mouse_recorder 0.0.2 documentation" href="index.html" />
+    <link rel="top" title="mouse_recorder 0.0.3 documentation" href="index.html" />
     <link rel="next" title="mouse.picture module" href="mouse.picture.html" />
     <link rel="prev" title="README" href="readme.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +51,7 @@
         <li class="right" >
           <a href="readme.html" title="README"
              accesskey="P">previous</a> &nbsp; &nbsp;</li>
-    <li><a href="index.html">mouse_recorder 0.0.2 documentation</a> &raquo;</li>
+    <li><a href="index.html">mouse_recorder 0.0.3 documentation</a> &raquo;</li>
  
       </ul>
     </div>
@@ -92,6 +92,7 @@ conventional recording apparatus used in behavioral studies.</p>
 <h3>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h3>
 <p>Enter the following into the terminal to install the program:</p>
 <div class="highlight-sh"><div class="highlight"><pre>git clone https://github.com/bnhwa/mouse_record
+<span class="nb">cd </span>mouse_record
 python setup.py develop
 </pre></div>
 </div>
@@ -99,8 +100,8 @@ python setup.py develop
 <div class="section" id="updating">
 <h3>Updating<a class="headerlink" href="#updating" title="Permalink to this headline">¶</a></h3>
 <p>To update the program, first specify the directory to where the <cite>mouse_record</cite>
-file is saved to. Then, enter the <code class="docutils literal"><span class="pre">git</span> <span class="pre">pull</span></code> command.
-An example is provided as follows:</p>
+file is saved to. Then, enter the <code class="docutils literal"><span class="pre">git</span> <span class="pre">pull</span></code> command. An example is provided
+as follows:</p>
 <div class="highlight-sh"><div class="highlight"><pre>git pull
 </pre></div>
 </div>
@@ -194,7 +195,9 @@ Additionally, the user can exit at any time by entering <code class="docutils li
 <h3>Recorder Usage<a class="headerlink" href="#recorder-usage" title="Permalink to this headline">¶</a></h3>
 <p>Execution of the program consists of the program name and respectve arguments:
 time to record before trigger event (in seconds), time to record after
-(in seconds), and directory of the file to be saved into.
+(in seconds), and directory of the file to be saved into. By default, this uses
+GPIO port <code class="docutils literal"><span class="pre">27</span></code>. However, a different one could be selected using the <code class="docutils literal"><span class="pre">-p</span></code>
+or <code class="docutils literal"><span class="pre">--port</span></code> option to specify it.
 An example is shown below:</p>
 <div class="highlight-sh"><div class="highlight"><pre>sudo mouse-record <span class="m">2</span> <span class="m">2</span> /home/pi/Desktop
 </pre></div>
@@ -310,7 +313,7 @@ An example is shown below:</p>
         <li class="right" >
           <a href="readme.html" title="README"
              >previous</a> &nbsp; &nbsp;</li>
-    <li><a href="index.html">mouse_recorder 0.0.2 documentation</a> &raquo;</li>
+    <li><a href="index.html">mouse_recorder 0.0.3 documentation</a> &raquo;</li>
  
       </ul>
     </div>
